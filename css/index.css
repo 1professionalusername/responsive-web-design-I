@@ -1,3 +1,210 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+    .container{
+        max-width: 100%;
+        padding: 10px;
+    }
+ }
+
+@media(max-width: 500px) {
+    .container{
+        max-width: 100%;
+        padding: 10px;
+    }
+ }
+
+.navigation{
+    display: flex;
+}
+
+@media(max-width: 800px) {
+    .navigation{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+ }
+
+@media(max-width: 500px) {
+   .navigation { 
+       flex-direction: column-reverse;
+       align-items: center;
+   }
+}
 
 
+
+.navigation ul{
+    padding-right: 50px;
+}
+
+@media(max-width: 500px) {
+    .navigation ul { 
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+    }
+}
+
+.navigation ul a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-top: 1px, solid, black;
+    border-bottom: 1px, solid, black;
+}
+
+@media(max-width: 500px) {
+    .navigation ul a { 
+        align-items: center;    
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+
+    .navigation ul a:first-child { 
+        border-top: 1px solid black;
+    }
+}
+
+/* .navigation img{
+    padding: 0 10px;
+} */
+
+.parent{
+    display: flex;
+    padding: 30px 10px;
+    align-content: center;
+    justify-content: space-around;
+}
+
+@media(max-width: 800px) {
+
+    .round-image {
+        display:none;
+    }
+}
+
+@media(max-width: 500px) {
+    .parent { 
+        flex-direction: column;
+    }
+
+    .round-image {
+        display:none;
+    }
+}
+
+
+
+.innovation{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.innovation button{
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.mid .parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+ 
+.features, .about{
+    padding: 5px;
+}
+
+.services, .product, .vision{
+    padding:5px;
+} 
+
+@media(max-width: 500px) {
+    .rect-image {
+        display: flex;
+}
+
+    .middle-img {
+        max-width: 100%;
+        height: 125px;
+    }
+
+    footer {
+        padding-left: 10px;
+    }
+
+    }
